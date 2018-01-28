@@ -134,6 +134,7 @@ final class FormModelDescriber implements ModelDescriberInterface, ModelRegistry
                     } else {
                         $property->setType('string');
                         $property->setFormat(sprintf('%s id', $entityClass));
+                        $property->setExample(sprintf('%s id', $entityClass));
                     }
 
                     break;
